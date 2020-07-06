@@ -1,13 +1,17 @@
-import React from "react";
-
-import Layout from "./components/Layout";
-import GlobalStyles from "./styles/GlobalStyles";
+import React from 'react';
+import GlobalStyles from './styles/GlobalStyles';
+import Routes from './Routes';
+import { BrowserRouter as Router } from 'react-router-dom';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
     <>
-      <Layout />
-
+      <Router>
+        <Routes />
+      </Router>
+      <ToastContainer />
       <GlobalStyles />
     </>
   );

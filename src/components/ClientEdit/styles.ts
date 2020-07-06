@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Add } from "styled-icons/material";
+import { Form } from "@unform/web";
 
 export const Container = styled.div`
   grid-area: CE;
@@ -7,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: 24px 9.5px 0 16px;
+  padding: 24px 16px 0 16px;
   background-color: var(--secondary);
 `;
 
@@ -33,4 +34,24 @@ export const AddCategoryIcon = styled(Add)`
 
   color: var(--symbol);
   cursor: pointer;
+`;
+
+export const ClientForm = styled(Form)`
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+`
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const Button = styled.button`
+  background-color: rgb(67, 181, 129);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: 500;
 `;
